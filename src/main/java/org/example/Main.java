@@ -15,10 +15,10 @@ public class Main {
         AnimalRepository repository = new AnimalJsonRepository("animaux.json");
 
         List<Animal> animaux = new ArrayList<>();
-        Animal animal_1 = new Pigeon("Glodie Lukose", "Blanc", 25, "Pigeon");
-        Animal animal_2 = new Pigeon("Glodie Lukose", "Blanc", 25, "Pigeon");
-        animaux.add(animal_2);
-        animaux.add(animal_1);
+        Animal pigeon1 = new Pigeon("rilo", "blanc", 2, "blanc");
+        Animal pigeon2 = new Pigeon("rudy", "raye", 2, "blanc");
+        animaux.add(pigeon2);
+        animaux.add(pigeon1);
 
         // Sérialisation en JSON
         repository.save(animaux);

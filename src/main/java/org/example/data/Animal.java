@@ -3,15 +3,24 @@ package org.example.data;
 import java.io.Serializable;
 
 public class Animal implements Serializable {
-    String nom;
-    String pelage;
-    int age;
+    private String type; // Add this field
+    private String nom;
+    private String pelage;
+    private int age;
 
-
-    public Animal(String nom, String pelage, int age) {
+    public Animal(String type, String nom, String pelage, int age) {
+        this.type = type;
         this.nom = nom;
         this.pelage = pelage;
         this.age = age;
+    }
+
+    public String getType() {
+        return type;
+    }
+
+    public void setType(String type) {
+        this.type = type;
     }
 
     public String getNom() {
@@ -41,7 +50,8 @@ public class Animal implements Serializable {
     @Override
     public String toString() {
         return "Animal{" +
-                "nom='" + nom + '\'' +
+                "type='" + type + '\'' +
+                ", nom='" + nom + '\'' +
                 ", pelage='" + pelage + '\'' +
                 ", age=" + age +
                 '}';

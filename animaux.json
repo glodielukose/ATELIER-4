@@ -1,14 +1,16 @@
 [
   {
-    "couleur": "Pigeon",
-    "nom": "Glodie Lukose",
-    "pelage": "Blanc",
-    "age": 25
+    "couleurPlumes": "blanc",
+    "type": "Pigeon",
+    "nom": "rudy",
+    "pelage": "raye",
+    "age": 2
   },
   {
-    "couleur": "Pigeon",
-    "nom": "Glodie Lukose",
-    "pelage": "Blanc",
-    "age": 25
+    "couleurPlumes": "blanc",
+    "type": "Pigeon",
+    "nom": "rilo",
+    "pelage": "blanc",
+    "age": 2
   }
 ]
